@@ -12,9 +12,9 @@ public class Book {
     }
 
     public void printInfo() {
-        System.out.println(title + "by" + author + )
-                "Pages: " + pageCount +
-                "Available: " avaiable);
+        System.out.println(title + " by " + author + "\n" +
+                "Pages: " + pageCount + "\n" +
+                "Available: " + available);
     }
 
     public void borrow() {
@@ -22,11 +22,11 @@ public class Book {
             available = false;
             System.out.println("You borrowed: " + title);
         } else {
-            System.out.println("Book is not avaiable.");
+            System.out.println("Book is not available.");
         }
     }
 
-    public void returtBook() {
+    public void returnBook() {
         available = true;
         System.out.println("You returned: " + title);
     }
